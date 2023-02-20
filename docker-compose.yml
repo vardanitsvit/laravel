@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  web:
+    build: ../react-redux-realworld-example-app
+    ports:
+      - 4100:4100
+  api:
+    build: .
+    volumes:
+      - ./:/app/
+    ports:
+      - 8000:8000
