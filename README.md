@@ -27,7 +27,11 @@ cp .env.example .env
 Run the web server
 
 ```
+
+
 php artisan serve
+
+
 ```
 
 That's it. Now you can use the api, i.e.
