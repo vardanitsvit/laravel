@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: laravelback
+          image: IMAGE_NAME_BACK
           imagePullPolicy: Never
           ports:
             - containerPort: 8000
