@@ -26,7 +26,7 @@ pipeline {
     stage('Generate Kubernetes manifest') {
       steps {
         script {
-          def deploymentTemplate = readFile('deployment.yaml.template')
+          def deploymentTemplate = readFile('deployment-back.yaml.template')
           def deploymentManifest = deploymentTemplate.replace('IMAGE_NAME_BACK', "grivardan/laravel:${GIT_COMMIT}")
           writeFile file: 'deployment-back.yaml', text: deploymentManifest
         }
